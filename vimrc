@@ -11,9 +11,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'The-NERD-Commenter'
-Bundle 'paredit.vim'
 Bundle 'nginx.vim'
 Bundle 'ack.vim'
+Bundle 'velocity.vim'
 
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'kien/ctrlp.vim.git'
@@ -24,8 +24,6 @@ Bundle "rodjek/vim-puppet"
 Bundle "godlygeek/tabular"
 Bundle "scrooloose/syntastic"
 Bundle "tpope/vim-rsi.git"
-Bundle 'tpope/vim-fireplace.git'
-Bundle 'tpope/vim-classpath.git'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'guns/vim-clojure-static'
 Bundle 'bling/vim-airline'
@@ -35,10 +33,6 @@ set completeopt=menu
 let g:ycm_cache_omnifunc = 0
 let g:ycm_semantic_triggers = { 'clojure' : [] }
 let g:ycm_key_invoke_completion = '<PageDown>'
-
-" Custom Bundles {{{
-
-" }}}
 
 " }}}
 
@@ -131,7 +125,7 @@ let os = substitute(system('uname'), "\n", "", "")
 
 " Display settings {{{
 
-set guifont=Envy\ Code\ R\ for\ Powerline:h13
+set guifont=Monaco:h12
 set linespace=0
 let g:airline_powerline_fonts = 1
 
