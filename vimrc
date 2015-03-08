@@ -9,12 +9,10 @@ call vundle#begin()
 " Bundles {{{
 
 Bundle 'gmarik/Vundle.vim'
-
 Bundle 'The-NERD-Commenter'
 Bundle 'nginx.vim'
 Bundle 'ack.vim'
 Bundle 'velocity.vim'
-
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'kien/ctrlp.vim.git'
 Bundle 'altercation/vim-colors-solarized.git'
@@ -27,16 +25,17 @@ Bundle "tpope/vim-rsi.git"
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'guns/vim-clojure-static'
 Bundle 'bling/vim-airline'
+call vundle#end()
+
+" }}}
+
+" }}}
 
 set complete=.,b,u,]
 set completeopt=menu
 let g:ycm_cache_omnifunc = 0
 let g:ycm_semantic_triggers = { 'clojure' : [] }
 let g:ycm_key_invoke_completion = '<PageDown>'
-
-" }}}
-
-" }}}
 
 " Vim set options {{{
 
